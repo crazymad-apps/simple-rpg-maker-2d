@@ -1,0 +1,14 @@
+.canvas_container {
+  width: max-content;
+  height: max-content;
+  padding: 12px;
+
+  canvas {
+    position: relative;
+
+    width: 1000px;
+    height: 800px;
+
+    border: 1px solid black;
+  }
+}

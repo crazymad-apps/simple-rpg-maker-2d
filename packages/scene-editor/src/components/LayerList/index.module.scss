@@ -1,0 +1,21 @@
+.layer_list {
+  display: flex;
+  flex-direction: column-reverse;
+
+  width: 200px;
+  padding: 12px;
+
+  .layer_item {
+    margin-top: 12px;
+    padding: 6px 12px;
+
+    cursor: pointer;
+
+    border-radius: 2px;
+    background: white;
+  }
+  .layer_item.active {
+    color: white;
+    background-color: #1890ff;
+  }
+}

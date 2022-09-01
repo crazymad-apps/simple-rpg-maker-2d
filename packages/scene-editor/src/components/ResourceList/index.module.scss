@@ -1,0 +1,44 @@
+.resource_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 12px;
+
+  .resource_item {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    width: max-content;
+    margin-bottom: 12px;
+    padding: 6px;
+
+    cursor: pointer;
+    transition: all 0.2s;
+
+    border: 1px solid white;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 0 4px #0009;
+
+    img {
+      width: 32px;
+    }
+    label {
+      margin-top: 6px;
+
+      cursor: pointer;
+
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    &.active {
+      transform: translate(4px, 0);
+
+      border: 1px solid #1890ff;
+      box-shadow: 0 0 4px #1890ff99;
+    }
+  }
+}
